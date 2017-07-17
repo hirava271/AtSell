@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.UfeedbackVO" table="feedback_mst">
+
+		<id name="feedback_id" type="int" column="feedback_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="feedback">
+			<column name="feedback" />
+		</property>
+
+<many-to-one name="buyer_user_id" class="VO.UregistrationVO" cascade="delete" column="buyer_user_id"></many-to-one>
+	</class>
+
+</hibernate-mapping>

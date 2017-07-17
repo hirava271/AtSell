@@ -1,0 +1,54 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/** CHECKOUT BY STEP */
+/*  
+ * LAYOUT VARIABLES 
+ */
+.pts-newsletter .valid {
+  position: absolute;
+  top: -76px;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
+.pts-newsletter .content {
+  width: 100%;
+  text-align: center; }
+.pts-newsletter .description {
+  text-align: left;
+  line-height: 20px; }
+.pts-newsletter .title {
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase; }
+.pts-newsletter .input-form {
+  position: relative;
+  margin-top: 15px; }
+  .pts-newsletter .input-form input {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: none; }
+.pts-newsletter .button-submit {
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 100%; }
+  .pts-newsletter .button-submit button {
+    background: none;
+    height: 100%; }
+    .pts-newsletter .button-submit button:hover span {
+      color: #000000 !important; }

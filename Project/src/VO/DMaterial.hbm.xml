@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.DmaterialVO" table="Dmaterial_mst">
+
+		<id name="material_id" type="int" column="material_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="material">
+			<column name="material" />
+		</property>
+
+		<property name="material_description">
+			<column name="material_description" />
+		</property>
+
+	</class>
+
+</hibernate-mapping>

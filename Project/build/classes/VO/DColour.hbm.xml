@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.DcolourVO" table="Dcolour_mst">
+
+		<id name="colour_id" type="int" column="colour_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="colour">
+			<column name="colour" />
+		</property>
+
+		<property name="colour_description">
+			<column name="colour_description" />
+		</property>
+
+	</class>
+
+</hibernate-mapping>

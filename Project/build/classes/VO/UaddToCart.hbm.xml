@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.UaddToCartVO" table="UaddToCart">
+
+		<id name="cart_id" type="int" column="cart_id">
+			<generator class="increment" />
+		</id>
+		
+		<property name="cloth_id">
+			<column name="cloth_id" />
+		</property>
+
+		<property name="product_name">
+			<column name="product_name" />
+		</property>
+
+		<property name="price">
+			<column name="price" />
+		</property>
+		
+		<property name="path">
+			<column name="path" />
+		</property>
+		
+		<property name="size">
+			<column name="size" />
+		</property>
+		
+		<property name="quantity">
+			<column name="quantity" />
+		</property>
+		
+		<property name="color_code">
+			<column name="color_code" />
+		</property>
+		<many-to-one name="designer_user_id" class="VO.registrationVO" cascade="delete" column="designer_user_id"></many-to-one>
+		<many-to-one name="cartMstVOObj" class="VO.UaddToCartMstVO" cascade="delete" column="cart_mst_id"></many-to-one>
+		
+	</class>
+
+</hibernate-mapping>

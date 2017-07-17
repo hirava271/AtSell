@@ -1,0 +1,38 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/** CHECKOUT BY STEP */
+/*  
+ * LAYOUT VARIABLES 
+ */
+#header.menu_fixed .pts-megamenu .navbar-nav > li:hover > a, #header.menu_fixed .pts-megamenu .navbar-nav > li:focus > a, #header.menu_fixed .pts-megamenu .navbar-nav > li:active > a {
+  color: #5BACBF; }
+  #header.menu_fixed .pts-megamenu .navbar-nav > li:hover > a .caret:before, #header.menu_fixed .pts-megamenu .navbar-nav > li:focus > a .caret:before, #header.menu_fixed .pts-megamenu .navbar-nav > li:active > a .caret:before {
+    color: #5BACBF; }
+#header.menu_fixed .pts-megamenu .navbar-nav > li a:hover, #header.menu_fixed .pts-megamenu .navbar-nav > li a:focus, #header.menu_fixed .pts-megamenu .navbar-nav > li a:active {
+  color: #5BACBF; }
+  #header.menu_fixed .pts-megamenu .navbar-nav > li a:hover .caret:before, #header.menu_fixed .pts-megamenu .navbar-nav > li a:focus .caret:before, #header.menu_fixed .pts-megamenu .navbar-nav > li a:active .caret:before {
+    color: #5BACBF; }
+
+#header.category .pts-megamenu .navbar-nav > li:hover > a, #header.category .pts-megamenu .navbar-nav > li:focus > a, #header.category .pts-megamenu .navbar-nav > li:active > a {
+  color: #5BACBF; }
+  #header.category .pts-megamenu .navbar-nav > li:hover > a .caret:before, #header.category .pts-megamenu .navbar-nav > li:focus > a .caret:before, #header.category .pts-megamenu .navbar-nav > li:active > a .caret:before {
+    color: #5BACBF; }
+#header.category .pts-megamenu .navbar-nav > li a:hover, #header.category .pts-megamenu .navbar-nav > li a:focus, #header.category .pts-megamenu .navbar-nav > li a:active {
+  color: #5BACBF; }
+  #header.category .pts-megamenu .navbar-nav > li a:hover .caret:before, #header.category .pts-megamenu .navbar-nav > li a:focus .caret:before, #header.category .pts-megamenu .navbar-nav > li a:active .caret:before {
+    color: #5BACBF; }

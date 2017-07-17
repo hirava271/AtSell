@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.packageVO" table="package_mst">
+
+		<id name="package_id" type="int" column="package_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="package_name">
+			<column name="package_name" />
+		</property>
+
+		<property name="package_description">
+			<column name="package_description" />
+		</property>
+		
+		<property name="package_duration">
+			<column name="package_duration" />
+		</property>
+		
+		<property name="package_price">
+			<column name="package_price" />
+		</property>
+		
+		<property name="isActive" type="int">
+			<column name="is_active" />
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

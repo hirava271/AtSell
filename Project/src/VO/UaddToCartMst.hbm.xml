@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.UaddToCartMstVO" table="UaddToCart_Mst">
+
+		<id name="cart_mst_id" type="int" column="cart_mst_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="shipping_address">
+			<column name="shipping_address" />
+		</property>
+		
+		<property name="cart_type">
+			<column name="cart_type" />
+		</property>
+		
+		<property name="contact_no">
+			<column name="contact_no" />
+		</property>
+		
+		<property name="zip_code">
+			<column name="zip_code" />
+		</property>
+		
+		<property name="date">
+			<column name="date" />
+		</property>
+		
+		<property name="additional_info">
+			<column name="additional_info" />
+		</property>
+		
+		<many-to-one name="buyer_user_id" class="VO.UregistrationVO" cascade="delete" column="buyer_user_id"></many-to-one>
+		<many-to-one name="countryVO" class="VO.countryVO" cascade="delete" column="country_id"></many-to-one>
+		<many-to-one name="stateVO" class="VO.stateVO" cascade="delete" column="state_id"></many-to-one>
+		<many-to-one name="cityVO" class="VO.cityVO" cascade="delete" column="city_id"></many-to-one>
+	</class>
+
+</hibernate-mapping>

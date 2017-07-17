@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.DneckVO" table="Dneck_mst">
+
+		<id name="neck_id" type="int" column="neck_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="neck_type">
+			<column name="neck_type" />
+		</property>
+
+		<property name="neck_description">
+			<column name="neck_description" />
+		</property>
+
+	</class>
+
+</hibernate-mapping>

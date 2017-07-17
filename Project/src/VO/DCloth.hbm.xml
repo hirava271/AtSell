@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.DclothVO" table="Dcloth_mst">
+
+		<id name="cloth_id" type="int" column="cloth_id">
+			<generator class="increment" />
+		</id>
+		
+		<property name="item_type">
+			<column name="item_type" />
+		</property>
+
+		<property name="product_name">
+			<column name="product_name" />
+		</property>
+
+		<property name="product_description">
+			<column name="product_description" />
+		</property>
+		
+		<property name="price">
+			<column name="price" />
+		</property>
+		
+		<property name="length">
+			<column name="length" />
+		</property>
+<many-to-one name="catVO" class="VO.categoryVO" cascade="delete" column="category_id"></many-to-one>
+<many-to-one name="subcatVO" class="VO.subcategoryVO" cascade="delete" column="subcategory_id"></many-to-one>
+<many-to-one name="material" class="VO.DmaterialVO" cascade="delete" column="material_id"></many-to-one>
+<many-to-one name="neck" class="VO.DneckVO" cascade="delete" column="neck_id"></many-to-one>
+<many-to-one name="sleeve" class="VO.DSleevesVO" cascade="delete" column="sleeves_id"></many-to-one>
+<many-to-one name="regVoObj" class="VO.registrationVO" cascade="delete" column="designer_user_id"></many-to-one>
+	</class>
+
+</hibernate-mapping>

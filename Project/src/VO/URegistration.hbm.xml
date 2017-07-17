@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.UregistrationVO" table="Uregistration_mst">
+
+		<id name="buyer_user_id" type="int" column="buyer_user_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="first_name">
+			<column name="first_name" />
+		</property>
+
+		<property name="last_name">
+			<column name="last_name" />
+		</property>
+		
+		<property name="gender">
+			<column name="gender" />
+		</property>
+		
+		<property name="date_of_birth">
+			<column name="date_of_birth" />
+		</property>
+		
+		<many-to-one name="loginVoObj" class="VO.loginVO" cascade="delete" column="login_id"></many-to-one>
+	
+	</class>
+
+</hibernate-mapping>

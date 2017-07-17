@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.registrationVO" table="registration_mst">
+
+		<id name="designer_user_id" type="int" column="designer_user_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="user_name">
+			<column name="user_name" />
+		</property>
+
+		<property name="display_name">
+			<column name="display_name" />
+		</property>
+		
+		<property name="contact_number">
+			<column name="contact_number" />
+		</property>
+		
+<many-to-one name="loginVoObj" class="VO.loginVO" cascade="delete" column="login_id"></many-to-one>
+	</class>
+
+</hibernate-mapping>
